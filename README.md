@@ -23,3 +23,9 @@ func main() {
 }
 ```
 will only print the time and nothing else.
+
+You can change the Println function to whatever you want the output to be, if
+you set it to nil there will be no output. By default it is set to fmt.Println.
+Println is captured when calling Toc, this means it will use the value that
+Println had when calling Toc, even if you set Println to something else before
+the deferred timer function runs.
