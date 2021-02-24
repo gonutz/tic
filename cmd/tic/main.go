@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	f, err := os.OpenFile(cmd.Path(), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0x666)
+	f, err := os.OpenFile(cmd.Path(), os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	check(err)
 	defer f.Close()
 

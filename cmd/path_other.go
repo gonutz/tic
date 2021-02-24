@@ -3,5 +3,5 @@
 package cmd
 
 func Path() string {
-	return "~/tic_toc_time_stack")
+	return "~/.tic_toc_time_stack")
 }
